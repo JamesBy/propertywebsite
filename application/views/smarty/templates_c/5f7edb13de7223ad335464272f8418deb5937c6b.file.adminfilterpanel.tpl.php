@@ -1,0 +1,89 @@
+<?php /* Smarty version Smarty-3.1.15, created on 2013-12-16 13:07:51
+         compiled from "application\views\smarty\templates\adminfilterpanel.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:240752aecd04e00607-07462139%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '5f7edb13de7223ad335464272f8418deb5937c6b' => 
+    array (
+      0 => 'application\\views\\smarty\\templates\\adminfilterpanel.tpl',
+      1 => 1387195662,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '240752aecd04e00607-07462139',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.15',
+  'unifunc' => 'content_52aecd04e08300_51063850',
+  'variables' => 
+  array (
+    'var' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_52aecd04e08300_51063850')) {function content_52aecd04e08300_51063850($_smarty_tpl) {?>
+<div class="row well well-sm">Refine Search</div>
+<div class="row">
+
+    <div class="form-group col-md-3" id="divcounty" name="divcounty">
+        <label class="control-label" for="sbLocArea">County</label>
+        <select class="form-control" id="sbLocArea" name="sbLocArea" onchange="filterListing()">
+            <option value = "">All</option>
+            
+
+        </select>
+    </div>
+    <div class="form-group col-md-3" id="divpricemin" name="divpricemin">
+        <label class="control-label" for="sbPriceMin">Price-min</label>
+        <select class="form-control" id="sbPriceMin" name="sbPriceMin" onchange="filterListing()">
+            <option value = "">No Min</option>
+            <?php $_smarty_tpl->tpl_vars['var'] = new Smarty_Variable;$_smarty_tpl->tpl_vars['var']->step = 25000;$_smarty_tpl->tpl_vars['var']->total = (int) ceil(($_smarty_tpl->tpl_vars['var']->step > 0 ? 5000000+1 - (25000) : 25000-(5000000)+1)/abs($_smarty_tpl->tpl_vars['var']->step));
+if ($_smarty_tpl->tpl_vars['var']->total > 0) {
+for ($_smarty_tpl->tpl_vars['var']->value = 25000, $_smarty_tpl->tpl_vars['var']->iteration = 1;$_smarty_tpl->tpl_vars['var']->iteration <= $_smarty_tpl->tpl_vars['var']->total;$_smarty_tpl->tpl_vars['var']->value += $_smarty_tpl->tpl_vars['var']->step, $_smarty_tpl->tpl_vars['var']->iteration++) {
+$_smarty_tpl->tpl_vars['var']->first = $_smarty_tpl->tpl_vars['var']->iteration == 1;$_smarty_tpl->tpl_vars['var']->last = $_smarty_tpl->tpl_vars['var']->iteration == $_smarty_tpl->tpl_vars['var']->total;?>
+                <option value="<?php echo $_smarty_tpl->tpl_vars['var']->value;?>
+">€<?php echo $_smarty_tpl->tpl_vars['var']->value;?>
+</option>
+            <?php }} ?>
+            
+
+        </select>
+            
+    </div>
+    <div class="form-group col-md-3" id="divpricemax" name="price">
+        <label class="control-label" for="sbpricemax">Price-max</label>
+        <select class="form-control" id="sbpricemax" name="sbpricemax" onchange="filterListing()">
+        <option value = "">No Max</option>
+            <?php $_smarty_tpl->tpl_vars['var'] = new Smarty_Variable;$_smarty_tpl->tpl_vars['var']->step = 25000;$_smarty_tpl->tpl_vars['var']->total = (int) ceil(($_smarty_tpl->tpl_vars['var']->step > 0 ? 5000000+1 - (25000) : 25000-(5000000)+1)/abs($_smarty_tpl->tpl_vars['var']->step));
+if ($_smarty_tpl->tpl_vars['var']->total > 0) {
+for ($_smarty_tpl->tpl_vars['var']->value = 25000, $_smarty_tpl->tpl_vars['var']->iteration = 1;$_smarty_tpl->tpl_vars['var']->iteration <= $_smarty_tpl->tpl_vars['var']->total;$_smarty_tpl->tpl_vars['var']->value += $_smarty_tpl->tpl_vars['var']->step, $_smarty_tpl->tpl_vars['var']->iteration++) {
+$_smarty_tpl->tpl_vars['var']->first = $_smarty_tpl->tpl_vars['var']->iteration == 1;$_smarty_tpl->tpl_vars['var']->last = $_smarty_tpl->tpl_vars['var']->iteration == $_smarty_tpl->tpl_vars['var']->total;?>
+                <option value="<?php echo $_smarty_tpl->tpl_vars['var']->value;?>
+">€<?php echo $_smarty_tpl->tpl_vars['var']->value;?>
+</option>
+            <?php }} ?>
+           
+
+        </select>
+            
+    </div>        
+    <div class="form-group col-md-3" id="divtype" name="refinediv">
+        <label class="control-label" for="sbtype">House Type</label>
+        <select class="form-control" id="sbtype" name="sbtype" onchange="filterListing()">
+                    <option value = "">Any</option>
+                    <option value="Apartment">Apartement</option>
+                    <option value="Terraced House">Terraced House</option>
+                    <option value="Semi Detached">Semi Detached</option>
+                    <option value="Detached">Detached</option>
+                    <option value="Bungalow">Bungalow</option>
+                    <option value="Country">Country House</option>
+                    <option value="Studio">Studio</option>
+                    <option value="House">House</option>
+            
+
+        </select>
+    </div>
+</div>
+<?php }} ?>

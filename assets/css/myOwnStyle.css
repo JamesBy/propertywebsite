@@ -1,0 +1,172 @@
+/*************************************************
+ *************************************************
+ *                  myOwnStyles.php             **
+ *                                              **
+ * Project:         Property Website            **
+ * Class:           Webelevate 2.1              **
+ * Stream:          Application Development     **
+ * Date:            Nov/Dec 2013                **
+ *                                              **    
+ * Developer:       James Byrne                 **
+ *                                              **
+ * Student Number:  D12127553                   **
+ * email:           james.byrne@webelevate.ie   **
+ * phone:           086 8652565                 **
+ *                                              **              
+ *                                              **    
+ *************************************************                      
+ *************************************************/ 
+
+/*Double horizontal ruler*/
+hr{
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+root { 
+    display: block;
+}
+
+.img-responsive{width:100%;}
+
+
+.table {
+    max-width: none;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+body{
+    padding-top:60px;
+    background: url(../img/brickwall.png) repeat 0 0; 
+}
+
+.nicebg{
+    background: url(../img/brickwalllight.png) repeat 0 0; 
+    border-width:5px;	
+    border-style:groove;
+    border-radius: 8px;
+}
+
+.navbar-collapse{
+    font-weight:bold;
+    background-image: url(../img/brickwalllight.png);
+    border-bottom-width:5px;	
+    border-bottom-style:groove;
+
+}
+.navbar-inner{
+    font-weight:bold;
+    background-image: url(../img/brickwalllight.png);
+}
+.yonCarouselImg{
+        width: auto;
+        max-height: 225px;
+ }
+
+.well{
+    height: 20px;
+    line-height: 3px;
+    background-image: url(../img/brickwall.png);
+    color:whitesmoke;
+    font-family:Arial Black;
+    font-size: 15px;
+
+
+}
+
+.carousel img{
+    border-width:5px;	
+    border-style:groove;
+    border-radius: 8px;
+}
+
+.dispAddress{
+    font-size: 20px;
+    color:#449d44;
+    font-style: Comic Sans MS, cursive, sans-serif;
+    text-align: center;
+    background-color: #A4B9D1;
+    padding: 5px;
+    border:1px solid;
+    border-color:#000000;
+    border-radius: 5px;
+    margin-top:15px;
+}
+
+
+.listImage{
+    margin-top:25px;
+    border-width:3px;	
+    border-style:groove;
+    border-radius: 8px;
+}
+
+
+
+/*Css below for carousel transition fade thanks to stack overflow*/
+/*Css below for carousel transition fade thanks to stack overflow*/
+
+/* Fade transition for carousel items */
+.carousel .item {
+    left: 0 !important;
+    -webkit-transition: opacity 1.4s; /*adjust timing here */
+    -moz-transition: opacity 1.4s;
+    -o-transition: opacity 1.4s;
+    transition: opacity 1.4s;
+}
+.carousel-control {
+    background-image: none !important; /* remove background gradients on controls */
+}
+/* Fade controls with items */
+.next.left,
+.prev.right {
+    opacity: 1;
+    z-index: 1;
+}
+.active.left,
+.active.right {
+    opacity: 0;
+    z-index: 2;
+}
+
+/*Css above for carousel transition fade thanks to stack overflow*/
+/*Css above for carousel transition fade thanks to stack overflow*/
+
+/*take the spinner buttons off the number input*/    
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}   
+/*take the spinner buttons off the number input*/       
+
+
+/*Attampt to affix the sidebar*/
+/* bootstrap 3 helpers */
+
+@media (min-width: 1000px) {
+  #adRight.affix-top {
+    position: static;
+  	/*/margin-top:25px;
+  	width:228px;*/
+  }
+  
+  #adRight.affix {
+    position: fixed;
+    top: 75px;
+    left: 65%;
+    width: 30%;
+    height:94%
+
+  }
+}
+
+.affix,.affix-top {
+   position:static;
+}
+/*Attampt to affix the sidebar*/
