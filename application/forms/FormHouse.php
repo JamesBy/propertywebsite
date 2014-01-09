@@ -4,16 +4,9 @@
  *                  FormHouse.php               **
  *                                              **
  * Project:         Property Website            **
- * Subject:         Internet Development        **
- * Class:           Webelevate 2.1              **
- * Stream:          Application Development     **
- *                                              **
- *                                              **    
  * Developer:       James Byrne                 **
  *                                              **
- * Student Number:  D12127553                   **
  * email:           james.byrne@webelevate.ie   **
- * phone:           086 8652565                 **    
  *                                              **              
  *                                              **    
  *************************************************                      

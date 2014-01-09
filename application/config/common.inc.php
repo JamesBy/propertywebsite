@@ -5,17 +5,11 @@
  *                  common.inc.php              **
  *                                              **
  * Project:         Property Website            **
- * Subject:         Internet Development        **
- * Class:           Webelevate 2.1              **
- * Stream:          Application Development     **
  * Date:            Nov/Dec 2013                **
  *                                              **    
  * Developer:       James Byrne                 **
  *                                              **
- * Student Number:  D12127553                   **
  * email:           james.byrne@webelevate.ie   **
- * phone:           086 8652565                 **
- *                                              **              
  *                                              **    
  * ************************************************                      
  * ************************************************/
@@ -24,10 +18,10 @@
 
 //CHANGE THESE VALUES
 //CHANGE THESE VALUES
-define("DB_HOST","localhost");
-define("DB_USER","root");
-define("DB_PASSWORD","");
-define("DB_DATABASE","dafthome");
+define("DB_HOST","***");
+define("DB_USER","***");
+define("DB_PASSWORD","***");
+define("DB_DATABASE","***");
 
 defined('MY_APP') or die('Restricted access');
 set_include_path(APPLICATION_PATH . "/vendor/Smarty/libs" . PATH_SEPARATOR . get_include_path());
@@ -42,7 +36,6 @@ Zend_Loader::loadClass('Zend_View');
 
 set_include_path(APPLICATION_PATH . "/models" . PATH_SEPARATOR . get_include_path());
 
-//$db = Zend_Db::factory('Pdo_Mysql', array('host' => 'localhost', 'username' => 'root', 'password' => '', 'dbname' => 'dafthome'));
 $db = Zend_Db::factory('Pdo_Mysql', array('host' => DB_HOST, 'username' => DB_USER, 'password' => DB_PASSWORD, 'dbname' => DB_DATABASE));
 
 //Zend_Registry::set('my_db', $db);
