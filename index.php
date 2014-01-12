@@ -24,7 +24,7 @@
  */
 
 session_start();
-define("MY_APP", 1);
+define("MY_APP", ***********);
 // Define path to application directory
 defined('APPLICATION_PATH') || define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/application'));
 require_once(APPLICATION_PATH . '/config/common.inc.php');
