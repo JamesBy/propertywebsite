@@ -8,7 +8,7 @@
  *                                              **    
  * Developer:       James Byrne                 **
  *                                              **
- * email:           james.byrne@webelevate.ie   **
+ * email:           thejamiebyrne@gmail.com     **
  *                                              **              
  *                                              **    
  *************************************************                      

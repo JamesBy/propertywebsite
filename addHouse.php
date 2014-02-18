@@ -9,7 +9,7 @@
  *                                              **    
  * Developer:       James Byrne                 **
  *                                              **
- * email:           james.byrne@webelevate.ie   **
+ * email:           thejamiebyrne@gmail.com     **
  *                                              **              
  *                                              **    
  *************************************************                      
@@ -215,7 +215,7 @@ if ($loggedIn === true) {
 
                     if ($_POST['id'] != "" ){ 
                         //after editing send the user back to search screen so thay can 
-                        //look at the updated entry. Maybe no need for die(); here.
+                        //look at the updated entry.
                         header("Location: index.php");
                         die();
                     } else $finalErrorMessage = "New Property Entered. ID = " . $entry_id;

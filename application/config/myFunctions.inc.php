@@ -10,7 +10,7 @@
  *                                              **    
  * Developer:       James Byrne                 **
  *                                              **
- * email:           james.byrne@webelevate.ie   **
+ * email:           thejamiebyrne@gmail.com     **
  *                                              **              
  *                                              **    
  * ************************************************                      
@@ -53,14 +53,13 @@ function appendSellerInfo() {
     if (func_num_args() == 2) {
         if (is_array(func_get_arg(1))) {
             $filterArray = func_get_arg(1);
-            //die(print_r(func_get_arg(1)));
         } else {
             $houseId = func_get_arg(1);
         }
     }
 
 
-    //the select ststement
+    //the select statement
     //select everything from properties table and corresponding seller details from 
     //sellers table linked using the prop_x_seller table.
     $select = $dbTable->select()->setIntegrityCheck(false)

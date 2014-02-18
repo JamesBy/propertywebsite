@@ -8,7 +8,7 @@
  *                                              **    
  * Developer:       James Byrne                 **
  *                                              **
- * email:           james.byrne@webelevate.ie   **
+ * email:           thejamiebyrne@gmail.com     **
  *                                              **              
  *                                              **    
  *************************************************                      
@@ -22,17 +22,12 @@ class FormSeller extends Zend_Form {
 
     public function init() {
 
-        $name = $this->createElement('text', 'tiSellerName'); //,array(
+        $name = $this->createElement('text', 'tiSellerName'); 
         $name->addFilter('StringTrim');
-        //$address->addValidator('Alnum', true, array('allowWhiteSpace' => true));
-
         $name->addValidator('stringLength', false, array(0, 50, 'messages' => 'Server 
             Validation stringlength error: Cannot be more than 50 chars'));
-
         $name->setRequired(true)
                 ->addValidator('NotEmpty', true);
-        //->addErrorMessage('Server Validation You must enter a name.');
-
         $name->addValidator('regex', false, array('/^[a-z_A-Z_0-9_._,]+/', 'messages' => array(
                 'regexNotMatch' => 'Server Validation Regex Error: 
                                    You have used unauthorised characters in the name input.'
@@ -45,18 +40,14 @@ class FormSeller extends Zend_Form {
         //Server Validation keywords
         $email->setRequired(true)
                 ->addValidator('NotEmpty', true);
-        //->addErrorMessage('Server Validation You must enter an asking price.');
-
         $email->addValidator('stringLength', false, array(0, 50, 'messages' => 'Server 
             Validation stringlength error: Cannot be more than 50 chars'));
 
         $phone = $this->createElement('text', 'tiSellerPhone');
         $phone->addFilter('StringTrim');
-        //$description->setRequired(true);
         $phone->addValidator('regex', false, array('/^[0-9]+/', 'messages' => array(
                 'regexNotMatch' => 'Server Validation Regex Error:
                                    You have used unauthorised characters in the phone input.')));
-
         $phone->addValidator('stringLength', false, array(0, 50, 'messages' => 'Server 
             Validation stringlength error: Cannot be more than 50 chars'));
 

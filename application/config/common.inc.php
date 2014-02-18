@@ -9,7 +9,7 @@
  *                                              **    
  * Developer:       James Byrne                 **
  *                                              **
- * email:           james.byrne@webelevate.ie   **
+ * email:           thejamiebyrne@gmail.com     **
  *                                              **    
  * ************************************************                      
  * ************************************************/
@@ -38,10 +38,7 @@ set_include_path(APPLICATION_PATH . "/models" . PATH_SEPARATOR . get_include_pat
 
 $db = Zend_Db::factory('Pdo_Mysql', array('host' => DB_HOST, 'username' => DB_USER, 'password' => DB_PASSWORD, 'dbname' => DB_DATABASE));
 
-//Zend_Registry::set('my_db', $db);
 define("UPLOAD_PATH", realpath(dirname(__FILE__)) . "//..//..//uploads");
 Zend_Db_Table::setDefaultAdapter($db);
-
-//Zend_Registry::set('my_db', $db);
 
 ?>

@@ -9,7 +9,7 @@
  *                                              **    
  * Developer:       James Byrne                 **
  *                                              **
- * email:           james.byrne@webelevate.ie   **
+ * email:           thejamiebyrne@gmail.com     **
  *                                              **              
  *                                              **    
  *************************************************                      
@@ -83,7 +83,7 @@ switch ($pageAction) {
         echo $smarty->fetch('listPropContent.tpl');
         break;
     case 'badlogin':
-        //Send the alert to hiddin div and allow execution continue
+        //Send the alert to hidden div and allow execution continue
         $smarty->assign('badLoginAlert', "<p id=\"badLogin\"></p>");
     default:
         $dbTable = new Zend_Db_Table('properties');
